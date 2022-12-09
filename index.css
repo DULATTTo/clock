@@ -3,6 +3,8 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background: linear-gradient(to right, #00ffc8, #003cff);
   font-family: "";
   display: flex;
@@ -35,34 +37,33 @@ body {
 } 
 
 .clock .hand {
+  --rotation: 0;
   position: absolute;
   left: 50%;
   bottom: 50%;
   transform-origin: bottom;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  transform: translateX(-50%);
+  transform: translateX(-50%) rotate( calc( var(--rotation) * 1deg ) );
+  border: 1px solid white;
   z-index: 9;
 }
 
 .clock .hand.seconds {
   width: 3px;
   height: 45%;
-  border: 0.5px solid white;
   background-color: red;
 }
 
 .clock .hand.minutes {
-  width: 5px;
+  width: 7px;
   height: 40%;
-  border: 1px solid white;
   background-color: black;
 }
 
 .clock .hand.hours {
-  width: 7px;
+  width: 10px;
   height: 35%;
-  border: 1px solid white;
   background-color: black;
 }
 
