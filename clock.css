@@ -12,6 +12,7 @@ body {
   align-items: center;
   min-height: 100vh;
   overflow: hidden;
+  gap: 30px;
 }
 
 .clock {

@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="index.css" rel="stylesheet">
-    <script defer src="index.js"></script>
+    <link href="clock.css" rel="stylesheet">
+    <link href="stopwatch.css" rel="stylesheet">
+    <script defer src="clock.js"></script>
+    <script defer src="stopwatch.js"></script>
     <title>Clock</title>
   </head>
   <body>
@@ -24,6 +26,14 @@
       <div class="number number10">10</div>
       <div class="number number11">11</div>
       <div class="number number12">12</div>
+    </div>
+
+    <div class="stopwatch">
+      <div class="stopwatch-title">Timer</div>
+      <div id="stopwatch-timer">00:00:000</div>
+      <button id="start-button">Start</button>
+      <button id="stop-button" disabled>Stop</button>
+      <button id="reset-button" disabled>Reset</button>
     </div>
   </body>
 </html>
